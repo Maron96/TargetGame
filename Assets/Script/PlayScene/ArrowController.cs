@@ -10,6 +10,7 @@ public class ArrowController : MonoBehaviour
 
     Rigidbody rd;
     AudioSource audioSource;
+    public GameObject bom;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,11 @@ public class ArrowController : MonoBehaviour
         {
             audioSource.Play();
             Destroy(collision.gameObject);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
             ScoreController.score_num += 10;
-            Destroy(this.gameObject, 1.0f);
+            Destroy(this.gameObject, 0.2f);
         }
     }
 

@@ -39,7 +39,6 @@ public class TargetController : MonoBehaviour
     {
         // オブジェクトの座標
         float x = Random.Range(-8.0f, 8.0f);
-        // float y = Random.Range(5.0f, 13.0f);
         float y = Random.Range(3.0f, 10.0f);
         float z = 19.0f;
 
@@ -47,7 +46,7 @@ public class TargetController : MonoBehaviour
         {
             // オブジェクトを生成
             GameObject obj = Instantiate(target, new Vector3(x, y, z), Quaternion.identity);
-            Destroy(obj, 5.0f);
+            Destroy(obj, 2.0f);
         } 
     }
 }

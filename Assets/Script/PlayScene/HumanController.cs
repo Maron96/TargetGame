@@ -9,7 +9,7 @@ public class HumanController : MonoBehaviour
     AudioSource audioSource;
 
     public float speed;
-    public float adRotateY = 100;
+    public float adRotateY = 80;
     public float adRotateX = 50;
 
     float yRotate = 0.0f;
@@ -45,12 +45,12 @@ public class HumanController : MonoBehaviour
             yRotate = Mathf.Clamp(yRotate - adRotateY * Time.deltaTime, -70, 50);
             transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         }
-        if (result && Input.GetKey(KeyCode.W))
+        if (result && Input.GetKey(KeyCode.S))
         {
             xRotate = Mathf.Clamp(xRotate + adRotateX * Time.deltaTime, -30, 0);
             transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         }
-        if (result && Input.GetKey(KeyCode.S))
+        if (result && Input.GetKey(KeyCode.W))
         {
             xRotate = Mathf.Clamp(xRotate - adRotateX * Time.deltaTime, -30, 0);
             transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
