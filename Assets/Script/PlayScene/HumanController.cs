@@ -9,12 +9,13 @@ public class HumanController : MonoBehaviour
     AudioSource audioSource;
 
     public float speed;
-    public float adRotateY = 80;
-    public float adRotateX = 50;
+    public float adRotateY = 80f;
+    public float adRotateX = 50f;
 
     float yRotate = 0.0f;
     float xRotate = 0.0f;
     public static bool result;
+    public float rotSpeed;
 
     bool isPlay;
 
@@ -36,24 +37,36 @@ public class HumanController : MonoBehaviour
         // transform.Rotate(Vector3.up * Input.GetAxis("Horizontal"));
         if (result && Input.GetKey(KeyCode.D))
         {
-            // 1秒間辺りに100度回転させる処理。
-            yRotate = Mathf.Clamp(yRotate + adRotateY * Time.deltaTime, -70, 50);
-            transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            if (Time.frameCount % 2 == 0)
+            {
+                yRotate = Mathf.Clamp(yRotate + adRotateY * Time.deltaTime, -70, 50);
+                transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            }
+            // 1秒間辺りに100度回転させる処理。   
         }
         if (result && Input.GetKey(KeyCode.A))
         {
-            yRotate = Mathf.Clamp(yRotate - adRotateY * Time.deltaTime, -70, 50);
-            transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            if (Time.frameCount % 2 == 0)
+            {
+                yRotate = Mathf.Clamp(yRotate - adRotateY * Time.deltaTime, -70, 50);
+                transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            }          
         }
         if (result && Input.GetKey(KeyCode.S))
         {
-            xRotate = Mathf.Clamp(xRotate + adRotateX * Time.deltaTime, -30, 0);
-            transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            if (Time.frameCount % 2 == 0)
+            {
+                xRotate = Mathf.Clamp(xRotate + adRotateX * Time.deltaTime, -30, 0);
+                transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            }  
         }
         if (result && Input.GetKey(KeyCode.W))
         {
-            xRotate = Mathf.Clamp(xRotate - adRotateX * Time.deltaTime, -30, 0);
-            transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            if (Time.frameCount % 2 == 0)
+            {
+                xRotate = Mathf.Clamp(xRotate - adRotateX * Time.deltaTime, -30, 0);
+                transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            }
         }
         if (result && SceneManager.GetActiveScene().name == "PlayScene" && Input.GetMouseButtonDown(0))
         {

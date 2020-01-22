@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7569831009560831658}
   - component: {fileID: 4155481296862255956}
   - component: {fileID: 632614802518286603}
-  - component: {fileID: 5182248160448361260}
+  - component: {fileID: 8107145854371479659}
   m_Layer: 0
-  m_Name: Sphere (4)
-  m_TagString: Untagged
+  m_Name: 60
+  m_TagString: sixty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,8 +79,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &5182248160448361260
-SphereCollider:
+--- !u!64 &8107145854371479659
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,9 +89,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &4744382037029841938
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,11 +103,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8847736697171542665}
   - component: {fileID: 8054216858442017433}
-  - component: {fileID: 8526281229635626643}
-  - component: {fileID: 8540023668271516908}
+  - component: {fileID: 9097292966771661477}
+  - component: {fileID: 2602406082191493068}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
+  m_Name: 10
+  m_TagString: ten
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +134,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4744382037029841938}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8526281229635626643
+--- !u!23 &9097292966771661477
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,8 +172,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8540023668271516908
-SphereCollider:
+--- !u!64 &2602406082191493068
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -181,9 +182,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &5120338458353217524
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,10 +232,10 @@ GameObject:
   - component: {fileID: 7630726237667721271}
   - component: {fileID: 2735941970809936014}
   - component: {fileID: 6295916813730989464}
-  - component: {fileID: 4927018041913088487}
+  - component: {fileID: 1513339149741752210}
   m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_Name: 30
+  m_TagString: thirty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -298,8 +300,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &4927018041913088487
-SphereCollider:
+--- !u!64 &1513339149741752210
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -308,9 +310,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &6190224798577029896
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,10 +325,10 @@ GameObject:
   - component: {fileID: 8115331750027671663}
   - component: {fileID: 5143488751087586067}
   - component: {fileID: 91971755807598036}
-  - component: {fileID: 6329050817350616149}
+  - component: {fileID: 6875141527490436954}
   m_Layer: 0
-  m_Name: Sphere (3)
-  m_TagString: Untagged
+  m_Name: 40
+  m_TagString: forty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,8 +393,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &6329050817350616149
-SphereCollider:
+--- !u!64 &6875141527490436954
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -400,9 +403,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7854854795617044572
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,10 +418,10 @@ GameObject:
   - component: {fileID: 812336239731979753}
   - component: {fileID: 8250388153120978859}
   - component: {fileID: 3549042555464419674}
-  - component: {fileID: 244885052851019456}
+  - component: {fileID: 6151994768981973176}
   m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_Name: 20
+  m_TagString: twenty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,8 +486,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &244885052851019456
-SphereCollider:
+--- !u!64 &6151994768981973176
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -492,6 +496,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}

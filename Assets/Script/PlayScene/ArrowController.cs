@@ -28,16 +28,87 @@ public class ArrowController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "target")
+        Debug.Log(collision.gameObject.name);
+        GameObject pare;
+        pare = collision.gameObject.transform.parent.gameObject;
+
+        if (collision.gameObject.tag == "ten")
+        {
+            audioSource.Play();
+            Destroy(pare);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 10;
+            Destroy(this.gameObject, 0.2f);
+        }
+        else if (collision.gameObject.tag == "twenty")
+        {
+            audioSource.Play();
+            Destroy(pare);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 20;
+            Destroy(this.gameObject, 0.2f);
+        }
+        else if (collision.gameObject.tag == "thirty")
+        {
+            audioSource.Play();
+            Destroy(pare);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 30;
+            Destroy(this.gameObject, 0.2f);
+        }
+        else if (collision.gameObject.tag == "forty")
+        {
+            audioSource.Play();
+            Destroy(pare);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 40;
+            Destroy(this.gameObject, 0.2f);
+        }
+        else if (collision.gameObject.tag == "sixty")
+        {
+            audioSource.Play();
+            Destroy(pare);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 60;
+            Debug.Break();
+            Destroy(this.gameObject, 0.2f);
+        }
+        else if (collision.gameObject.tag == "ufo")
         {
             audioSource.Play();
             Destroy(collision.gameObject);
             GameObject obj;
             obj = Instantiate(bom, transform.position, transform.rotation);
             Destroy(obj, 1.0f);
-            ScoreController.score_num += 10;
+            ScoreController.score_num += 100;
             Destroy(this.gameObject, 0.2f);
         }
+        /* if (collision.gameObject.tag == "target")
+        {
+            audioSource.Play();
+            Destroy(collision.gameObject);
+            GameObject obj;
+            obj = Instantiate(bom, transform.position, transform.rotation);
+            Destroy(obj, 1.0f);
+            if (collision.gameObject)
+            ScoreController.score_num += 10;
+            Destroy(this.gameObject, 0.2f);
+        */
     }
 
     private void OnTriggerEnter(Collider other)

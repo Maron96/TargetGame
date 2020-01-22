@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 6072067850238006943, guid: 41be9c456c572a54bb248ebb3cb76177, type: 3}
+  ufo: {fileID: 1668164834764622142, guid: f23f878f8c05b4f458b94b8cf8365229, type: 3}
 --- !u!4 &160700908
 Transform:
   m_ObjectHideFlags: 0
@@ -1317,6 +1318,10 @@ PrefabInstance:
     - target: {fileID: 3982947664219279972, guid: cedbeffa93c84494899614a1a55de61f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 394766659, guid: cedbeffa93c84494899614a1a55de61f, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

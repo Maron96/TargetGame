@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - target
+  - ten
+  - twenty
+  - thirty
+  - forty
+  - sixty
+  - ufo
   layers:
   - Default
   - TransparentFX

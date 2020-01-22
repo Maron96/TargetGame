@@ -5,13 +5,16 @@ using UnityEngine;
 public class TargetController : MonoBehaviour
 {
     public GameObject target;
+    public GameObject ufo;
     private bool result;
     private GameObject mato;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("Locate");        
+        StartCoroutine("Locate");
+        StartCoroutine("Ufo");
     }
 
     // Update is called once per frame
@@ -33,6 +36,15 @@ public class TargetController : MonoBehaviour
             }
         }
         
+    }
+
+    private IEnumerator Ufo()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(10.0f, 30.0f));
+            Instantiate(ufo, new Vector3(24.7f, -1.3f, 35.0f), Quaternion.identity);
+        }
     }
 
     private void Make()

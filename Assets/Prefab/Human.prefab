@@ -390,7 +390,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3169940331617423613}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbde940332fc9e64581acafaddd19a4f, type: 3}
   m_Name: 
@@ -399,6 +399,7 @@ MonoBehaviour:
   speed: 0
   adRotateY: 100
   adRotateX: 50
+  rotSpeed: 1
 --- !u!82 &-6195768414440623511
 AudioSource:
   m_ObjectHideFlags: 0
