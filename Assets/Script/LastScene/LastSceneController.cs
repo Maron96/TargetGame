@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class LastSceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource audioSource;
+    public Text last;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        last.text = "score:" + ScoreController.score_num;
     }
 
     public void OnClick()
     {
+        StartCoroutine("Last");
+        audioSource.Play();
+    }
+
+    IEnumerator Last()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("TitleScene");
     }
+
+
 }

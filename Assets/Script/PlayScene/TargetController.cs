@@ -5,9 +5,11 @@ using UnityEngine;
 public class TargetController : MonoBehaviour
 {
     public GameObject target;
-    public GameObject ufo;
+    // public GameObject ufo;
+    public GameObject[] ufo;
     private bool result;
     private GameObject mato;
+    int number;
     
 
     // Start is called before the first frame update
@@ -42,8 +44,15 @@ public class TargetController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(10.0f, 30.0f));
-            Instantiate(ufo, new Vector3(24.7f, -1.3f, 35.0f), Quaternion.identity);
+            number = Random.Range(0, ufo.Length);
+            yield return new WaitForSeconds(Random.Range(5.0f, 25.0f));
+            GameObject obj = Instantiate(ufo[number], new Vector3(24.7f, -1.3f, 35.0f), Quaternion.identity);
+            BgmController.ufoBgm = true;
+            if (obj != null)
+            {
+                // Destroy(obj, 25.0f);
+               // BgmController.ufoBgm = false;
+            }  
         }
     }
 

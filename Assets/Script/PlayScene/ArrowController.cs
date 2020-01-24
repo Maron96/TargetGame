@@ -28,7 +28,6 @@ public class ArrowController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         GameObject pare;
         pare = collision.gameObject.transform.parent.gameObject;
 
@@ -85,30 +84,19 @@ public class ArrowController : MonoBehaviour
             Destroy(obj, 1.0f);
             if (collision.gameObject)
             ScoreController.score_num += 60;
-            Debug.Break();
             Destroy(this.gameObject, 0.2f);
         }
         else if (collision.gameObject.tag == "ufo")
         {
             audioSource.Play();
-            Destroy(collision.gameObject);
+            Destroy(pare);
+            BgmController.ufoBgm = false;
             GameObject obj;
             obj = Instantiate(bom, transform.position, transform.rotation);
             Destroy(obj, 1.0f);
             ScoreController.score_num += 100;
             Destroy(this.gameObject, 0.2f);
         }
-        /* if (collision.gameObject.tag == "target")
-        {
-            audioSource.Play();
-            Destroy(collision.gameObject);
-            GameObject obj;
-            obj = Instantiate(bom, transform.position, transform.rotation);
-            Destroy(obj, 1.0f);
-            if (collision.gameObject)
-            ScoreController.score_num += 10;
-            Destroy(this.gameObject, 0.2f);
-        */
     }
 
     private void OnTriggerEnter(Collider other)
