@@ -7,10 +7,23 @@ public class LastSceneController : MonoBehaviour
 {
     public AudioSource audioSource;
     public Text last;
+    public Text pati;
+    public Text patipati;
+    string[] word = { "ぱちぱち", "がーん" };
 
     private void Start()
     {
         last.text = "score:" + ScoreController.score_num;
+        if (ScoreController.score_num < 300)
+        {
+            pati.text = word[0];
+            patipati.text = word[0];
+        }
+        else
+        {
+            pati.text = word[1];
+            patipati.text = word[1];
+        }
     }
 
     public void OnClick()
