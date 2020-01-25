@@ -32,6 +32,12 @@ public class StartScene : MonoBehaviour
         StartCoroutine("Title");
     }
 
+    public void StoryButtonClick()
+    {
+        audioSource.PlayOneShot(button);
+        StartCoroutine("Story");
+    }
+
     IEnumerator Stco()
     {
         yield return new WaitForSeconds(0.5f);
@@ -48,6 +54,12 @@ public class StartScene : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("TitleScene");
+    }
+
+    IEnumerator Story()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("StoryScene");
     }
 
 }

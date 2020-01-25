@@ -1577,12 +1577,27 @@ PrefabInstance:
     - target: {fileID: 9020304740012564540, guid: 5ed113cc45ac0df4387b315eb9d38bb0,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9020304740012564540, guid: 5ed113cc45ac0df4387b315eb9d38bb0,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020304740012564540, guid: 5ed113cc45ac0df4387b315eb9d38bb0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020304740012564540, guid: 5ed113cc45ac0df4387b315eb9d38bb0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.759434
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020304740012564540, guid: 5ed113cc45ac0df4387b315eb9d38bb0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.95047176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ed113cc45ac0df4387b315eb9d38bb0, type: 3}
